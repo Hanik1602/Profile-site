@@ -1,81 +1,86 @@
-/* Reset margin and padding for all elements */
+/* Reset default browser styles for consistency across browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set basic styles for the entire document */
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
 }
 
-/* Styling the sidebar */
+/* Styling for the left sidebar */
 .left {
-    position: fixed; /* Fixed position */
-    width: 25%; /* Sidebar takes up 25% of the viewport width */
+    position: fixed; /* Keep the sidebar fixed during scrolling */
+    width: 25%; /* Sidebar occupies 25% of the viewport width */
     height: 100%; /* Full height of the viewport */
-    background-color: #9ef9f7; /* Light grey background */
-    padding: 20px; /* Some padding around the content */
-    overflow-y: auto; /* Enable vertical scrolling if the content is too long */
+    background-color: #9ef9f7; /* Background color of the sidebar */
+    padding: 20px; /* Padding around the content in the sidebar */
+    overflow-y: auto; /* Enable scrolling if the content exceeds the height */
 }
 
-/* Styling the main content area */
+/* Styling for the main content area on the right */
 .right {
-    margin-left: 25%; /* Main content starts after the sidebar */
-    width: 75%; /* Main content takes up the remaining 75% of the width */
+    margin-left: 25%; /* Offset the main content to the right to make room for the sidebar */
+    width: 75%; /* Main content occupies the remaining 75% of the viewport width */
     height: 100vh; /* Full height of the viewport */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 20px; /* Some padding around the content */
-    background-color: #6270ec; /* Slightly darker grey background */
+    overflow-y: auto; /* Enable scrolling if the content exceeds the height */
+    padding: 20px; /* Padding around the content in the main area */
+    background-color: #6270ec; /* Background color of the main content area */
 }
 
-/* Styling the image box */
-.image-box {/* Center-align the image */
-    position: fixed;
-    top: 50px;
-    width: 20%; /* Take up the full width of the sidebar */
-    text-align: center; 
+/* Styling for the profile picture container */
+.image-box {
+    position: fixed; /* Fix the position relative to the viewport */
+    top: 50px; /* Distance from the top of the viewport */
+    width: 20%; /* Width relative to the sidebar width */
+    text-align: center; /* Center-align the content (image) inside the container */
 }
 
-/* Styling the image */
+/* Styling for the profile picture */
 .image-box img {
-    width: 80%; /* Resize the image to fit the box */
-    height: auto; /* Keep the aspect ratio of the image */
-    border: 3px solid #a3d1d6; /* Add a border around the image */
-    margin-bottom: 10px; /* Add some space below the image */
+    width: 80%; /* Width of the image relative to its container */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #a3d1d6; /* Border around the image */
+    margin-bottom: 10px; /* Space below the image */
 }
 
+/* Styling for the information section in the sidebar */
 .information {
     position: absolute;
-    top: calc(15px + 40%); /* Adjust this based on actual height of .image-box and image */
+    top: calc(15px + 40%); /* Position the information block below the image */
     width: 100%;
-    text-align: left;
-    padding-left: 15px;
-    color: rgb(97, 136, 233);
+    text-align: left; /* Align text to the left */
+    padding-left: 15px; /* Padding from the left edge */
+    color: rgb(97, 136, 233); /* Text color */
 }
 
+/* Styling for the 'About Me' section in the sidebar */
 .information .about-me {
-    margin-top: 25px; /* Add some space above the about me text */
-    color: rgb(97, 136, 233); /* Text color, adjust as needed */
-    font-size: 17px;
+    margin-top: 25px; /* Space above the 'About Me' text */
+    color: rgb(97, 136, 233); /* Text color */
+    font-size: 17px; /* Font size */
 }
 
+/* General styling for personal information items in the sidebar */
 .in4 {
-    margin-top: 40px; /* Add some space above the about me text */
-    color: rgb(97, 136, 233); /* Text color, adjust as needed */
+    margin-top: 40px; /* Space above each information item */
+    color: rgb(97, 136, 233); /* Text color */
     position: absolute;
     width: 100%;
-    text-align: left;
-    padding-left: 2px;
+    text-align: left; /* Align text to the left */
+    padding-left: 2px; /* Padding from the left edge */
 }
+
 .age {
-    top: calc(90px + 40%); /* Adjust this based on actual height of .image-box and image */
+    top: calc(90px + 40%); 
     color: rgb(31, 51, 102);
     font-size: 16px;
 }
 .major {
-    top: calc(120px + 40%); /* Adjust this based on actual height of .image-box and image */
+    top: calc(120px + 40%);
     color: rgb(31, 51, 102);
     font-size: 16px;
 }
@@ -95,15 +100,17 @@ body, html {
     font-size: 16px;
 }
 
+
+/* Styling for the theme title in the main content area */
 .theme {
-    position: absolute; /* Position it absolutely within .right */
-    top: 30px; /* Distance from the top */
-    left: 65%; /* Center it horizontally */
+    position: absolute; /* Fix the position relative to its container */
+    top: 30px; /* Distance from the top of the container */
+    left: 65%; /* Center it horizontally with respect to the container */
     transform: translateX(-50%); /* Adjust horizontal centering */
-    text-align: center; /* Center the text within the element */
+    text-align: center; /* Center-align the text */
     width: auto; /* Let it size according to content */
-    font-size: 24px; /* Adjust the font size as needed */
-    color: #fff;
+    font-size: 24px; /* Font size */
+    color: #fff; /* Text color */
 }
 
 .right .wake-up-image {
