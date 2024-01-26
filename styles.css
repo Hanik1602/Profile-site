@@ -33,22 +33,22 @@ body, html {
 /* Styling the image box */
 .image-box {/* Center-align the image */
     position: fixed;
-    top: 150px;
+    top: 50px;
     width: 20%; /* Take up the full width of the sidebar */
     text-align: center; 
 }
 
 /* Styling the image */
 .image-box img {
-    width: 50%; /* Resize the image to fit the box */
+    width: 80%; /* Resize the image to fit the box */
     height: auto; /* Keep the aspect ratio of the image */
-    border: 3px solid #ddd; /* Add a border around the image */
+    border: 3px solid #a3d1d6; /* Add a border around the image */
     margin-bottom: 10px; /* Add some space below the image */
 }
 
 .information {
     position: absolute;
-    top: calc(40px + 50%); /* Adjust this based on actual height of .image-box and image */
+    top: calc(15px + 40%); /* Adjust this based on actual height of .image-box and image */
     width: 100%;
     text-align: left;
     padding-left: 15px;
@@ -56,11 +56,222 @@ body, html {
 }
 
 .information .about-me {
-    margin-top: 10px; /* Add some space above the about me text */
+    margin-top: 25px; /* Add some space above the about me text */
     color: rgb(97, 136, 233); /* Text color, adjust as needed */
+    font-size: 17px;
 }
 
-.information .in4 {
-    margin-top: 10px; /* Add some space above the about me text */
+.in4 {
+    margin-top: 40px; /* Add some space above the about me text */
     color: rgb(97, 136, 233); /* Text color, adjust as needed */
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    padding-left: 2px;
+}
+.age {
+    top: calc(90px + 40%); /* Adjust this based on actual height of .image-box and image */
+    color: rgb(31, 51, 102);
+    font-size: 16px;
+}
+.major {
+    top: calc(120px + 40%); /* Adjust this based on actual height of .image-box and image */
+    color: rgb(31, 51, 102);
+    font-size: 16px;
+}
+.nationality {
+    top: calc(150px + 40%);
+    color: rgb(31, 51, 102);
+    font-size: 16px;
+}
+.hobbies {
+    top: calc(180px + 40%);
+    color: rgb(31, 51, 102);
+    font-size: 16px;
+}
+.foods {
+    top: calc(210px + 40%);
+    color: rgb(31, 51, 102);
+    font-size: 16px;
+}
+
+.theme {
+    position: absolute; /* Position it absolutely within .right */
+    top: 30px; /* Distance from the top */
+    left: 65%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust horizontal centering */
+    text-align: center; /* Center the text within the element */
+    width: auto; /* Let it size according to content */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #fff;
+}
+
+.right .wake-up-image {
+    position: absolute; /* Absolute positioning */
+    top: 135px; /* Distance from the top of the .right container */
+    left: 440px; /* Distance from the left of the .right container */
+    width: 130px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .wake-up {
+    position: absolute;
+    padding-top: 245px;
+    text-align: left;
+    padding-left: 65px;
+    color: #80c1d5;
+    font-size: 17px;
+}
+
+.right .breakfast-image {
+    position: absolute; /* Absolute positioning */
+    top: 135px; /* Distance from the top of the .right container */
+    left: 650px; /* Distance from the left of the .right container */
+    width: 130px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .breakfast {
+    position: absolute;
+    padding-top: 245px;
+    text-align: left;
+    padding-left: 250px;
+    color: #80c1d5;
+    font-size: 17px;
+}
+
+.right .study-morning-image {
+    position: absolute; /* Absolute positioning */
+    top: 120px; /* Distance from the top of the .right container */
+    left: 860px; /* Distance from the left of the .right container */
+    width: 130px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .study-morning {
+    position: absolute;
+    padding-top: 245px;
+    text-align: left;
+    padding-left: 480px;
+    color: #80c1d5;
+    font-size: 17px;
+}
+
+.right .have-lunch-image {
+    position: absolute; /* Absolute positioning */
+    top: 140px; /* Distance from the top of the .right container */
+    left: 1070px; /* Distance from the left of the .right container */
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .have-lunch {
+    position: absolute;
+    padding-top: 245px;
+    text-align: left;
+    padding-left: 680px;
+    color: #80c1d5;
+    font-size: 17px;
+}
+
+.right .play-game-image {
+    position: absolute; /* Absolute positioning */
+    top: 115px; /* Distance from the top of the .right container */
+    left: 1260px; /* Distance from the left of the .right container */
+    width: 170px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .play-game {
+    position: absolute;
+    padding-top: 245px;
+    text-align: left;
+    padding-left: 880px;
+    color: #80c1d5;
+    font-size: 17px;
+}
+
+.right .study-afternoon-image {
+    position: absolute; /* Absolute positioning */
+    top: 370px; /* Distance from the top of the .right container */
+    left: 440px; /* Distance from the left of the .right container */
+    width: 130px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .study-afternoon {
+    position: absolute;
+    padding-top: 505px;
+    text-align: left;
+    padding-left: 75px;
+    color: #80c1d5;
+    font-size: 17px;
+}
+
+.right .have-dinner-image {
+    position: absolute; /* Absolute positioning */
+    top: 350px; /* Distance from the top of the .right container */
+    left: 650px; /* Distance from the left of the .right container */
+    width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .have-dinner {
+    position: absolute;
+    padding-top: 505px;
+    text-align: left;
+    padding-left: 270px;
+    color: #80c1d5;
+    font-size: 17px;
+}
+
+.right .do-gymnastics-image {
+    position: absolute; /* Absolute positioning */
+    top: 370px; /* Distance from the top of the .right container */
+    left: 870px; /* Distance from the left of the .right container */
+    width: 130px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .do-gymnastics {
+    position: absolute;
+    padding-top: 505px;
+    text-align: left;
+    padding-left: 485px;
+    color: #80c1d5;
+    font-size: 17px;
+}
+
+.right .watch-movie-image {
+    position: absolute; /* Absolute positioning */
+    top: 380px; /* Distance from the top of the .right container */
+    left: 1070px; /* Distance from the left of the .right container */
+    width: 140px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .watch-movie {
+    position: absolute;
+    padding-top: 505px;
+    text-align: left;
+    padding-left: 690px;
+    color: #80c1d5;
+    font-size: 17px;
+}
+
+.right .sleep-image {
+    position: absolute; /* Absolute positioning */
+    top: 350px; /* Distance from the top of the .right container */
+    left: 1275px; /* Distance from the left of the .right container */
+    width: 140px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right .sleep {
+    position: absolute;
+    padding-top: 505px;
+    text-align: left;
+    padding-left: 910px;
+    color: #80c1d5;
+    font-size: 17px;
 }
